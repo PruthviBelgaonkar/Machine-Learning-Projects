@@ -46,3 +46,6 @@ docker ps
 
 docker stop container id
 
+python setup.py install
+
+
