@@ -17,7 +17,7 @@ REQUIREMENT_FILE_NAME="requirements.txt"
 ##THIS FN IS GOING TO RETURN LIST OF REQUIREMENT MENTION IN REQUIREMENT.TXT
 def get_requirements_list()->List[str]: 
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
-        return requirement_file.readlines()
+        return requirement_file.readlines().remove("-e .")
 
 setup(
 name=PROJECT_NAME,
