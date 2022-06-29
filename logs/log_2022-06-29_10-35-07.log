@@ -1,0 +1,6 @@
+[2022-06-29 10:35:07,358]werkzeug-WARNING- * Debugger is active!
+[2022-06-29 10:35:07,382]werkzeug-INFO- * Debugger PIN: 214-253-559
+[2022-06-29 10:37:33,728]root-INFO-We are testing Logging module
+[2022-06-29 10:37:33,729]werkzeug-INFO-127.0.0.1 - - [29/Jun/2022 10:37:33] "GET / HTTP/1.1" 200 -
+[2022-06-29 10:37:34,602]werkzeug-INFO-127.0.0.1 - - [29/Jun/2022 10:37:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2022-06-29 10:37:52,080]werkzeug-INFO- * Detected change in 'E:\\ineuronbasics\\Machine-Learning-Projects\\app.py', reloading

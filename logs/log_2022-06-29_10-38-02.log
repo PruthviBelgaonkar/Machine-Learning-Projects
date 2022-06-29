@@ -1,0 +1,4 @@
+[2022-06-29 10:38:02,279]werkzeug-WARNING- * Debugger is active!
+[2022-06-29 10:38:02,295]werkzeug-INFO- * Debugger PIN: 214-253-559
+[2022-06-29 10:38:11,913]root-INFO-We are testing Logging module
+[2022-06-29 10:38:11,914]werkzeug-INFO-127.0.0.1 - - [29/Jun/2022 10:38:11] "GET / HTTP/1.1" 200 -
