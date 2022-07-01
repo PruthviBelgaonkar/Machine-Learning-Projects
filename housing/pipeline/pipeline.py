@@ -1,5 +1,3 @@
-from signal import raise_signal
-from tkinter import E
 from housing.config.configuration import Configuration
 from housing.logger import logging
 from housing.exception import HousingException

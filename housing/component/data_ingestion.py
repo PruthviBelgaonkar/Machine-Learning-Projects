@@ -1,4 +1,3 @@
-from sklearn.metrics import rand_score
 from housing.entity.config_entity import DataIngestionConfig
 from housing.logger import logging
 from housing.exception import HousingException

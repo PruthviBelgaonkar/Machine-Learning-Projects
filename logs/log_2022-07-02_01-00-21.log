@@ -1,0 +1,2 @@
+[2022-07-02 01:00:23,399]root-INFO-Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-02 01:00:23,400]root-ERROR-run_pipeline() missing 1 required positional argument: 'self'
