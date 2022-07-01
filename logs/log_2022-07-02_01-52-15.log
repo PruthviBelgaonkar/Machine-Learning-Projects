@@ -1,0 +1,15 @@
+[2022-07-02 01:52:16,628]root-INFO-Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-02 01:52:16,628]root-INFO-Data Ingestion Config :DataIngestionConfig(dataset_download_url='https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz', tgz_download_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-02_01-52-15\\tgz_data', raw_data_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-02_01-52-15\\raw_data', ingested_train_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-02_01-52-15\\ingested_data\\train', ingested_test_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-02_01-52-15\\ingested_data\\test')
+[2022-07-02 01:52:16,629]root-INFO-====================Data Ingestion Log Started.====================
+[2022-07-02 01:52:16,631]root-INFO-downloading file from :[https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz] into :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-02_01-52-15\tgz_data\housing.tgz]
+[2022-07-02 01:52:17,002]root-INFO-File :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-02_01-52-15\tgz_data\housing.tgz] has been downloaded successfully
+[2022-07-02 01:52:17,002]root-INFO-Extracting tgz file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-02_01-52-15\tgz_data\housing.tgz] into dir : [E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-02_01-52-15\raw_data]
+[2022-07-02 01:52:17,022]root-INFO-Extracting Completed
+[2022-07-02 01:52:17,022]root-INFO-Reading csv file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-02_01-52-15\raw_data\housing.csv]
+[2022-07-02 01:52:17,094]root-INFO-Splitting Data into train test split
+[2022-07-02 01:52:17,113]root-INFO-Exporting training dataset to file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-02_01-52-15\ingested_data\train\housing.csv]
+[2022-07-02 01:52:17,341]root-INFO-Exporting testing dataset to file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-02_01-52-15\ingested_data\test\housing.csv]
+[2022-07-02 01:52:17,419]root-INFO-Data Ingestion Artifact :[DataIngestionArtifact(train_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-02_01-52-15\\ingested_data\\train\\housing.csv', test_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-02_01-52-15\\ingested_data\\test\\housing.csv', is_ingested=True, message='Data Ingestion completed Successfully')]
+[2022-07-02 01:52:17,420]root-INFO-====================Data Ingestion Log Completed.==================== 
+
+

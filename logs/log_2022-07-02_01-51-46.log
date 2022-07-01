@@ -1,0 +1,17 @@
+[2022-07-02 01:51:47,996]root-INFO-Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-02 01:51:47,997]root-ERROR-
+        Error occured in script: 
+        [ E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py ] at 
+        try block line number: [45] and exception block line number: [48] 
+        error message: [
+        Error occured in script: 
+        [ E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py ] at 
+        try block line number: [20] and exception block line number: [24] 
+        error message: [
+        Error occured in script: 
+        [ E:\ineuronbasics\Machine-Learning-Projects\housing\config\configuration.py ] at 
+        try block line number: [26] and exception block line number: [72] 
+        error message: [Testing exception]
+        ]
+        ]
+        

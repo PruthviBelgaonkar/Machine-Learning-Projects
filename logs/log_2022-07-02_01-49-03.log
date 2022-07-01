@@ -1,0 +1,2 @@
+[2022-07-02 01:49:06,690]root-INFO-Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-02 01:49:06,691]root-ERROR-name 'error_detail' is not defined
