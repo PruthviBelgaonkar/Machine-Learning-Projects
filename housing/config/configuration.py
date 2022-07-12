@@ -71,7 +71,7 @@ class Configuration:
         except Exception as e:
             raise HousingException(e,sys) from e
 
-    def get_validation_config(self)->DataValidationConfig:
+    def get_data_validation_config(self)->DataValidationConfig:
         try:
             artifact_dir = self.training_pipeline_config.artifact_dir
             data_validation_artifact_dir = os.path.join(

@@ -27,10 +27,6 @@ git push origin main
 
 TO SETUP CI/CD PIPELINE IN HEROKU :-
 
-1. HEROKU EMAIL - pruthvibelgaonkar469@gmail.com 
-2. HEROKU API_KEY - 4ef8f515-7f3b-4285-92f4-c76dcedd7852
-3. HEROKU APP_NAME - ml-regressor-ineuron
-
 
 BUILD DOCKER IMAGE
 
