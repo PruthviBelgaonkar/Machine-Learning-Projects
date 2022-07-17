@@ -1,0 +1,9 @@
+[2022-07-17 12:58:11,968]root-INFO-Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-17 12:58:12,068]root-ERROR-
+        Error occured in script: 
+        [ E:\ineuronbasics\Machine-Learning-Projects\housing\component\data_transformation.py ] at 
+        try block line number: [114] 
+        and exception block line number: [118] 
+        error message: [ 
+ Column :[median_house_value] is not in the schema]
+        
