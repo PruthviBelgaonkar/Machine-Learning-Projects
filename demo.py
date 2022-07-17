@@ -6,14 +6,9 @@ from housing.component.data_transformation import DataTransformation
 
 def main():
     try:
-        #pipeline = Pipeline()
-        #pipeline.run_pipeline()
-        schema_file_path = r"E:\ineuronbasics\Machine-Learning-Projects\config\schema.yaml"
-        file_path = r"E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-12_13-04-21\ingested_data\train\housing.csv"
-
-        df = DataTransformation.load_data(file_path=file_path,schema_file_path=schema_file_path)
-        print(df.columns)
-        print(df.dtypes)
+        pipeline = Pipeline()
+        pipeline.run_pipeline()
+    
     except Exception as e:
         logging.error(f"{e}")
         print(e)

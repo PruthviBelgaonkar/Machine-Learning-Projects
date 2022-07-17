@@ -1,0 +1,39 @@
+[2022-07-17 17:48:52,034]root-INFO-Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-17 17:48:52,034]root-INFO-Data Ingestion Config :DataIngestionConfig(dataset_download_url='https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz', tgz_download_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-17_17-48-51\\tgz_data', raw_data_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-17_17-48-51\\raw_data', ingested_train_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-17_17-48-51\\ingested_data\\train', ingested_test_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-17_17-48-51\\ingested_data\\test')
+[2022-07-17 17:48:52,036]root-INFO-====================Data Ingestion Log Started.====================
+[2022-07-17 17:48:52,036]root-INFO-downloading file from :[https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz] into :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-17_17-48-51\tgz_data\housing.tgz]
+[2022-07-17 17:48:53,168]root-INFO-File :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-17_17-48-51\tgz_data\housing.tgz] has been downloaded successfully
+[2022-07-17 17:48:53,168]root-INFO-Extracting tgz file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-17_17-48-51\tgz_data\housing.tgz] into dir : [E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-17_17-48-51\raw_data]
+[2022-07-17 17:48:53,178]root-INFO-Extracting Completed
+[2022-07-17 17:48:53,179]root-INFO-Reading csv file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-17_17-48-51\raw_data\housing.csv]
+[2022-07-17 17:48:53,221]root-INFO-Splitting Data into train test split
+[2022-07-17 17:48:53,232]root-INFO-Exporting training dataset to file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-17_17-48-51\ingested_data\train\housing.csv]
+[2022-07-17 17:48:53,401]root-INFO-Exporting testing dataset to file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-17_17-48-51\ingested_data\test\housing.csv]
+[2022-07-17 17:48:53,452]root-INFO-Data Ingestion Artifact :[DataIngestionArtifact(train_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-17_17-48-51\\ingested_data\\train\\housing.csv', test_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-17_17-48-51\\ingested_data\\test\\housing.csv', is_ingested=True, message='Data Ingestion completed Successfully')]
+[2022-07-17 17:48:53,453]root-INFO-====================Data Ingestion Log Completed.==================== 
+
+
+[2022-07-17 17:48:53,453]root-INFO-====================Data Validation Log Started.==================== 
+
+
+[2022-07-17 17:48:53,453]root-INFO-Checking if training and test file is available
+[2022-07-17 17:48:53,453]root-INFO-Is train test file exists..?->True
+[2022-07-17 17:48:55,974]root-INFO-Data Validation Artifact : DataValidationArtifact(schema_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\config\\schema.yaml', report_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_validation\\2022-07-17_17-48-51\\report.json', report_page_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_validation\\2022-07-17_17-48-51\\report.html', is_validated=True, message='Data Validation performed successfully')
+[2022-07-17 17:48:55,974]root-INFO-====================Data Validation Log Completed.==================== 
+
+
+[2022-07-17 17:48:55,974]root-INFO-Data Transformation Config :DataTransformationConfig(add_bedroom_per_room=True, transformed_train_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-17_17-48-51\\transformed_data\\train', transformed_test_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-17_17-48-51\\transformed_data\\test', preprocessed_object_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-17_17-48-51\\preprocessed\\preprocessed.pkl')
+[2022-07-17 17:48:55,974]root-INFO->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Transformation log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-17 17:48:55,975]root-INFO-Obtaining preprocessing object.
+[2022-07-17 17:48:55,980]root-INFO-Categorical columns: ['ocean_proximity']
+[2022-07-17 17:48:55,980]root-INFO-Numerical columns: ['longitude', 'latitude', 'housing_median_age', 'total_rooms', 'total_bedrooms', 'population', 'households', 'median_income']
+[2022-07-17 17:48:55,980]root-INFO-Obtaining training and test file path.
+[2022-07-17 17:48:55,980]root-INFO-Loading training and test data as pandas dataframe.
+[2022-07-17 17:48:56,025]root-INFO-Splitting input and target feature from training and testing dataframe.
+[2022-07-17 17:48:56,028]root-INFO-Applying preprocessing object on training dataframe and testing dataframe
+[2022-07-17 17:48:56,085]root-INFO-Saving transformed training and testing array.
+[2022-07-17 17:48:56,405]root-INFO-Saving preprocessing object.
+[2022-07-17 17:48:56,408]root-INFO-Data Transformation Artifact : DataTransformationArtifact(is_transformed=True, message='DATA TRANSFORMATION SUCCESSFULLY', transformed_train_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-17_17-48-51\\transformed_data\\train\\housingnpz', transformed_test_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-17_17-48-51\\transformed_data\\test\\housingnpz', preprocessed_object_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-17_17-48-51\\preprocessed\\preprocessed.pkl')
+[2022-07-17 17:48:56,409]root-INFO-====================Data Transformation Log Completed.==================== 
+
+
