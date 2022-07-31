@@ -1,0 +1,17 @@
+[2022-07-31 13:39:26,383]^;INFO^;224^;_internal.py^;_log()^; * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+[2022-07-31 13:39:51,495]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:39:51] "GET / HTTP/1.1" 200 -
+[2022-07-31 13:39:59,252]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:39:59] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-31 13:40:09,805]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-31 13:40:09,808]^;INFO^;116^;pipeline.py^;run_pipeline()^;Pipeline starting.
+[2022-07-31 13:40:09,809]^;INFO^;132^;pipeline.py^;run_pipeline()^;Pipeline experiment: Experiment(experiment_id='176323fd-1bd7-4c68-86d8-4aa908b3a686', initialization_timestamp='2022-07-31-13-40-09', artifact_time_stamp='2022-07-31-13-40-09', running_status=True, start_time=datetime.datetime(2022, 7, 31, 13, 40, 9, 809785), stop_time=None, execution_time=None, message='Pipeline has been started.', experiment_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\experiment\\experiment.csv', accuracy=None, is_model_accepted=None)
+[2022-07-31 13:40:09,844]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:40:09] "GET /train HTTP/1.1" 200 -
+[2022-07-31 13:40:09,847]^;INFO^;67^;configuration.py^;get_data_ingestion_config()^;Data Ingestion Config :DataIngestionConfig(dataset_download_url='https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz', tgz_download_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-40-09\\tgz_data', raw_data_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-40-09\\raw_data', ingested_train_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-40-09\\ingested_data\\train', ingested_test_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-40-09\\ingested_data\\test')
+[2022-07-31 13:40:09,848]^;INFO^;18^;data_ingestion.py^;__init__()^;====================Data Ingestion Log Started.====================
+[2022-07-31 13:40:09,849]^;INFO^;40^;data_ingestion.py^;download_housing_data()^;downloading file from :[https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz] into :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-31-13-40-09\tgz_data\housing.tgz]
+[2022-07-31 13:40:10,318]^;INFO^;128^;data_ingestion.py^;__del__()^;====================Data Ingestion Log Completed.==================== 
+
+
+[2022-07-31 13:40:28,341]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:40:28] "GET /update_model_config HTTP/1.1" 200 -
+[2022-07-31 13:40:33,750]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-31 13:40:33,761]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:40:33] "GET /train HTTP/1.1" 200 -
+[2022-07-31 13:40:40,492]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:40:40] "GET /predict HTTP/1.1" 200 -

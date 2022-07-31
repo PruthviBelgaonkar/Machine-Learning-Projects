@@ -180,7 +180,7 @@ class Configuration:
         except Exception as e:
             raise HousingException(e,sys) from e
 
-    def model_evaluation_config(self)->ModelEvaluationConfig:
+    def get_model_evaluation_config(self)->ModelEvaluationConfig:
         try:
             model_evaluation_config = self.config_info[MODEL_EVALUATION_CONFIG_KEY]
             artifact_dir = os.path.join(self.training_pipeline_config.artifact_dir,
@@ -197,7 +197,7 @@ class Configuration:
         except Exception as e:
             raise HousingException(e,sys) from e
     
-    def model_pusher_config(self)->ModelPusherConfig:
+    def get_model_pusher_config(self)->ModelPusherConfig:
         try:
             time_stamp = f"{datetime.now().strftime('%Y%m%d%H%M%S')}"
             model_pusher_config_info = self.config_info[MODEL_PUSHER_CONFIG_KEY]

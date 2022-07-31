@@ -1,0 +1,148 @@
+[2022-07-31 13:50:28,471]^;INFO^;224^;_internal.py^;_log()^; * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+[2022-07-31 13:51:04,503]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:51:04] "GET / HTTP/1.1" 200 -
+[2022-07-31 13:51:08,188]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:51:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2022-07-31 13:51:30,977]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:51:30] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-31 13:52:13,100]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-31 13:52:13,101]^;INFO^;116^;pipeline.py^;run_pipeline()^;Pipeline starting.
+[2022-07-31 13:52:13,102]^;INFO^;132^;pipeline.py^;run_pipeline()^;Pipeline experiment: Experiment(experiment_id='a0d49ac5-cbbd-4bf1-9c30-5153f8e0c05f', initialization_timestamp='2022-07-31-13-52-13', artifact_time_stamp='2022-07-31-13-52-13', running_status=True, start_time=datetime.datetime(2022, 7, 31, 13, 52, 13, 102918), stop_time=None, execution_time=None, message='Pipeline has been started.', experiment_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\experiment\\experiment.csv', accuracy=None, is_model_accepted=None)
+[2022-07-31 13:52:13,125]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:52:13] "GET /train HTTP/1.1" 200 -
+[2022-07-31 13:52:13,129]^;INFO^;67^;configuration.py^;get_data_ingestion_config()^;Data Ingestion Config :DataIngestionConfig(dataset_download_url='https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz', tgz_download_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-52-13\\tgz_data', raw_data_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-52-13\\raw_data', ingested_train_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-52-13\\ingested_data\\train', ingested_test_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-52-13\\ingested_data\\test')
+[2022-07-31 13:52:13,129]^;INFO^;18^;data_ingestion.py^;__init__()^;====================Data Ingestion Log Started.====================
+[2022-07-31 13:52:13,131]^;INFO^;40^;data_ingestion.py^;download_housing_data()^;downloading file from :[https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz] into :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-31-13-52-13\tgz_data\housing.tgz]
+[2022-07-31 13:52:13,963]^;INFO^;42^;data_ingestion.py^;download_housing_data()^;File :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-31-13-52-13\tgz_data\housing.tgz] has been downloaded successfully
+[2022-07-31 13:52:13,964]^;INFO^;56^;data_ingestion.py^;extract_tgz_file()^;Extracting tgz file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-31-13-52-13\tgz_data\housing.tgz] into dir : [E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-31-13-52-13\raw_data]
+[2022-07-31 13:52:13,985]^;INFO^;61^;data_ingestion.py^;extract_tgz_file()^;Extracting Completed
+[2022-07-31 13:52:13,985]^;INFO^;74^;data_ingestion.py^;split_data_as_train_test()^;Reading csv file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-31-13-52-13\raw_data\housing.csv]
+[2022-07-31 13:52:14,075]^;INFO^;83^;data_ingestion.py^;split_data_as_train_test()^;Splitting Data into train test split
+[2022-07-31 13:52:14,110]^;INFO^;98^;data_ingestion.py^;split_data_as_train_test()^;Exporting training dataset to file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-31-13-52-13\ingested_data\train\housing.csv]
+[2022-07-31 13:52:14,350]^;INFO^;103^;data_ingestion.py^;split_data_as_train_test()^;Exporting testing dataset to file :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-31-13-52-13\ingested_data\test\housing.csv]
+[2022-07-31 13:52:14,407]^;INFO^;111^;data_ingestion.py^;split_data_as_train_test()^;Data Ingestion Artifact :[DataIngestionArtifact(train_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-52-13\\ingested_data\\train\\housing.csv', test_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-52-13\\ingested_data\\test\\housing.csv', is_ingested=True, message='Data Ingestion completed Successfully')]
+[2022-07-31 13:52:14,408]^;INFO^;128^;data_ingestion.py^;__del__()^;====================Data Ingestion Log Completed.==================== 
+
+
+[2022-07-31 13:52:14,409]^;INFO^;19^;data_validation.py^;__init__()^;====================Data Validation Log Started.==================== 
+
+
+[2022-07-31 13:52:14,409]^;INFO^;39^;data_validation.py^;is_train_file_exists()^;Checking if training and test file is available
+[2022-07-31 13:52:14,409]^;INFO^;51^;data_validation.py^;is_train_file_exists()^;Is train test file exists..?->True
+[2022-07-31 13:52:16,280]^;INFO^;133^;data_validation.py^;initiate_data_validation()^;Data Validation Artifact : DataValidationArtifact(schema_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\config\\schema.yaml', report_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_validation\\2022-07-31-13-52-13\\report.json', report_page_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_validation\\2022-07-31-13-52-13\\report.html', is_validated=True, message='Data Validation performed successfully')
+[2022-07-31 13:52:16,280]^;INFO^;139^;data_validation.py^;__del__()^;====================Data Validation Log Completed.==================== 
+
+
+[2022-07-31 13:52:16,280]^;INFO^;145^;configuration.py^;get_data_transformation_config()^;Data Transformation Config :DataTransformationConfig(add_bedroom_per_room=True, transformed_train_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-31-13-52-13\\transformed_data\\train', transformed_test_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-31-13-52-13\\transformed_data\\test', preprocessed_object_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-31-13-52-13\\preprocessed\\preprocessed.pkl')
+[2022-07-31 13:52:16,280]^;INFO^;97^;data_transformation.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Transformation log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-31 13:52:16,280]^;INFO^;148^;data_transformation.py^;initiate_data_transformation()^;Obtaining preprocessing object.
+[2022-07-31 13:52:16,286]^;INFO^;133^;data_transformation.py^;get_data_transformer_object()^;Categorical columns: ['ocean_proximity']
+[2022-07-31 13:52:16,286]^;INFO^;134^;data_transformation.py^;get_data_transformer_object()^;Numerical columns: ['longitude', 'latitude', 'housing_median_age', 'total_rooms', 'total_bedrooms', 'population', 'households', 'median_income']
+[2022-07-31 13:52:16,286]^;INFO^;151^;data_transformation.py^;initiate_data_transformation()^;Obtaining training and test file path.
+[2022-07-31 13:52:16,286]^;INFO^;157^;data_transformation.py^;initiate_data_transformation()^;Loading training and test data as pandas dataframe.
+[2022-07-31 13:52:16,364]^;INFO^;166^;data_transformation.py^;initiate_data_transformation()^;Splitting input and target feature from training and testing dataframe.
+[2022-07-31 13:52:16,367]^;INFO^;173^;data_transformation.py^;initiate_data_transformation()^;Applying preprocessing object on training dataframe and testing dataframe
+[2022-07-31 13:52:16,451]^;INFO^;189^;data_transformation.py^;initiate_data_transformation()^;Saving transformed training and testing array.
+[2022-07-31 13:52:16,457]^;INFO^;196^;data_transformation.py^;initiate_data_transformation()^;Saving preprocessing object.
+[2022-07-31 13:52:16,464]^;INFO^;206^;data_transformation.py^;initiate_data_transformation()^;Data Transformation Artifact : DataTransformationArtifact(is_transformed=True, message='DATA TRANSFORMATION SUCCESSFULLY', transformed_train_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-31-13-52-13\\transformed_data\\train\\housing.npz', transformed_test_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-31-13-52-13\\transformed_data\\test\\housing.npz', preprocessed_object_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_transformation\\2022-07-31-13-52-13\\preprocessed\\preprocessed.pkl')
+[2022-07-31 13:52:16,465]^;INFO^;213^;data_transformation.py^;__del__()^;====================Data Transformation Log Completed.==================== 
+
+
+[2022-07-31 13:52:16,466]^;INFO^;178^;configuration.py^;get_model_trainer_config()^;Model Trainer Config : ModelTrainerConfig(trained_model_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\model_trainer\\2022-07-31-13-52-13\\trained_model\\model.pkl', base_accuracy=0.6, model_config_file_path='config\\model.yaml')
+[2022-07-31 13:52:16,466]^;INFO^;45^;model_trainer.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model trainer log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-31 13:52:16,466]^;INFO^;53^;model_trainer.py^;initiate_model_trainer()^;Loading transformed training dataset
+[2022-07-31 13:52:16,478]^;INFO^;57^;model_trainer.py^;initiate_model_trainer()^;Loading transformed testing dataset
+[2022-07-31 13:52:16,480]^;INFO^;61^;model_trainer.py^;initiate_model_trainer()^;Splitting training and testing input and target feature
+[2022-07-31 13:52:16,480]^;INFO^;65^;model_trainer.py^;initiate_model_trainer()^;Extracting model config file path
+[2022-07-31 13:52:16,480]^;INFO^;68^;model_trainer.py^;initiate_model_trainer()^;Initializing model factory class using above model config file: config\model.yaml
+[2022-07-31 13:52:16,486]^;INFO^;73^;model_trainer.py^;initiate_model_trainer()^;Expected accuracy: 0.6
+[2022-07-31 13:52:16,486]^;INFO^;75^;model_trainer.py^;initiate_model_trainer()^;Initiating operation model selecttion
+[2022-07-31 13:52:16,486]^;INFO^;358^;model_factory.py^;get_best_model()^;Started Initializing model from config file
+[2022-07-31 13:52:16,486]^;INFO^;203^;model_factory.py^;class_for_name()^;Executing command: from <module 'sklearn.linear_model' from 'E:\\ineuronbasics\\Machine-Learning-Projects\\venv\\lib\\site-packages\\sklearn\\linear_model\\__init__.py'> import LinearRegression
+[2022-07-31 13:52:16,489]^;INFO^;182^;model_factory.py^;update_property_of_class()^;Executing:$ LinearRegression().fit_intercept=True
+[2022-07-31 13:52:16,559]^;INFO^;203^;model_factory.py^;class_for_name()^;Executing command: from <module 'sklearn.ensemble' from 'E:\\ineuronbasics\\Machine-Learning-Projects\\venv\\lib\\site-packages\\sklearn\\ensemble\\__init__.py'> import RandomForestRegressor
+[2022-07-31 13:52:16,560]^;INFO^;182^;model_factory.py^;update_property_of_class()^;Executing:$ RandomForestRegressor().min_samples_leaf=3
+[2022-07-31 13:52:16,561]^;INFO^;360^;model_factory.py^;get_best_model()^;Initialized model: [InitializedModelDetail(model_serial_number='module_0', model=LinearRegression(), param_grid_search={'fit_intercept': [True, False]}, model_name='sklearn.linear_model.LinearRegression'), InitializedModelDetail(model_serial_number='module_1', model=RandomForestRegressor(min_samples_leaf=3), param_grid_search={'min_samples_leaf': [6]}, model_name='sklearn.ensemble.RandomForestRegressor')]
+[2022-07-31 13:52:16,562]^;INFO^;203^;model_factory.py^;class_for_name()^;Executing command: from <module 'sklearn.model_selection' from 'E:\\ineuronbasics\\Machine-Learning-Projects\\venv\\lib\\site-packages\\sklearn\\model_selection\\__init__.py'> import GridSearchCV
+[2022-07-31 13:52:16,563]^;INFO^;182^;model_factory.py^;update_property_of_class()^;Executing:$ GridSearchCV(estimator=LinearRegression(),
+             param_grid={'fit_intercept': [True, False]}).cv=5
+[2022-07-31 13:52:16,564]^;INFO^;182^;model_factory.py^;update_property_of_class()^;Executing:$ GridSearchCV(cv=5, estimator=LinearRegression(),
+             param_grid={'fit_intercept': [True, False]}).verbose=2
+[2022-07-31 13:52:16,564]^;INFO^;236^;model_factory.py^;execute_grid_search_operation()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> f"Training LinearRegression Started." <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-31 13:52:16,749]^;INFO^;203^;model_factory.py^;class_for_name()^;Executing command: from <module 'sklearn.model_selection' from 'E:\\ineuronbasics\\Machine-Learning-Projects\\venv\\lib\\site-packages\\sklearn\\model_selection\\__init__.py'> import GridSearchCV
+[2022-07-31 13:52:16,751]^;INFO^;182^;model_factory.py^;update_property_of_class()^;Executing:$ GridSearchCV(estimator=RandomForestRegressor(min_samples_leaf=3),
+             param_grid={'min_samples_leaf': [6]}).cv=5
+[2022-07-31 13:52:16,753]^;INFO^;182^;model_factory.py^;update_property_of_class()^;Executing:$ GridSearchCV(cv=5, estimator=RandomForestRegressor(min_samples_leaf=3),
+             param_grid={'min_samples_leaf': [6]}).verbose=2
+[2022-07-31 13:52:16,753]^;INFO^;236^;model_factory.py^;execute_grid_search_operation()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> f"Training RandomForestRegressor Started." <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-31 13:52:17,976]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:52:17] "GET / HTTP/1.1" 200 -
+[2022-07-31 13:52:25,628]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:52:25] "GET /predict HTTP/1.1" 200 -
+[2022-07-31 13:52:31,471]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:52:31] "GET /update_model_config HTTP/1.1" 200 -
+[2022-07-31 13:52:37,272]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:52:37] "GET / HTTP/1.1" 200 -
+[2022-07-31 13:53:44,152]^;INFO^;345^;model_factory.py^;get_best_model_from_grid_searched_best_model_list()^;Acceptable model found:GridSearchedBestModel(model_serial_number='module_0', model=LinearRegression(), best_model=LinearRegression(fit_intercept=False), best_parameters={'fit_intercept': False}, best_score=0.6425567028055794)
+[2022-07-31 13:53:44,152]^;INFO^;345^;model_factory.py^;get_best_model_from_grid_searched_best_model_list()^;Acceptable model found:GridSearchedBestModel(model_serial_number='module_1', model=RandomForestRegressor(min_samples_leaf=3), best_model=RandomForestRegressor(min_samples_leaf=6), best_parameters={'min_samples_leaf': 6}, best_score=0.804316945267666)
+[2022-07-31 13:53:44,153]^;INFO^;351^;model_factory.py^;get_best_model_from_grid_searched_best_model_list()^;Best model: GridSearchedBestModel(model_serial_number='module_1', model=RandomForestRegressor(min_samples_leaf=3), best_model=RandomForestRegressor(min_samples_leaf=6), best_parameters={'min_samples_leaf': 6}, best_score=0.804316945267666)
+[2022-07-31 13:53:44,154]^;INFO^;78^;model_trainer.py^;initiate_model_trainer()^;Best model found on training dataset: GridSearchedBestModel(model_serial_number='module_1', model=RandomForestRegressor(min_samples_leaf=3), best_model=RandomForestRegressor(min_samples_leaf=6), best_parameters={'min_samples_leaf': 6}, best_score=0.804316945267666)
+[2022-07-31 13:53:44,154]^;INFO^;80^;model_trainer.py^;initiate_model_trainer()^;Extracting trained model list.
+[2022-07-31 13:53:44,154]^;INFO^;84^;model_trainer.py^;initiate_model_trainer()^;Evaluation all trained model on training and testing dataset both
+[2022-07-31 13:53:44,154]^;INFO^;71^;model_factory.py^;evaluate_regression_model()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Started evaluating model: [LinearRegression] <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-31 13:53:44,159]^;INFO^;90^;model_factory.py^;evaluate_regression_model()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Score <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-31 13:53:44,159]^;INFO^;91^;model_factory.py^;evaluate_regression_model()^;Train Score		 Test Score		 Average Score
+[2022-07-31 13:53:44,159]^;INFO^;92^;model_factory.py^;evaluate_regression_model()^;0.6481553634454353		 0.6524330608386422		0.650287177366607
+[2022-07-31 13:53:44,160]^;INFO^;94^;model_factory.py^;evaluate_regression_model()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Loss <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-31 13:53:44,160]^;INFO^;95^;model_factory.py^;evaluate_regression_model()^;Diff test train accuracy: [0.004277697393206825].
+[2022-07-31 13:53:44,160]^;INFO^;96^;model_factory.py^;evaluate_regression_model()^;Train root mean squared error: [68627.87390018745].
+[2022-07-31 13:53:44,160]^;INFO^;97^;model_factory.py^;evaluate_regression_model()^;Test root mean squared error: [67304.47314152].
+[2022-07-31 13:53:44,160]^;INFO^;113^;model_factory.py^;evaluate_regression_model()^;Acceptable model found MetricInfoArtifact(model_name='LinearRegression(fit_intercept=False)', model_object=LinearRegression(fit_intercept=False), train_rmse=68627.87390018745, test_rmse=67304.47314152, train_accuracy=0.6481553634454353, test_accuracy=0.6524330608386422, model_accuracy=0.650287177366607, index_number=0). 
+[2022-07-31 13:53:44,161]^;INFO^;71^;model_factory.py^;evaluate_regression_model()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Started evaluating model: [RandomForestRegressor] <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-31 13:53:44,614]^;INFO^;90^;model_factory.py^;evaluate_regression_model()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Score <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-31 13:53:44,614]^;INFO^;91^;model_factory.py^;evaluate_regression_model()^;Train Score		 Test Score		 Average Score
+[2022-07-31 13:53:44,615]^;INFO^;92^;model_factory.py^;evaluate_regression_model()^;0.904460802229746		 0.5253580959770306		0.6646517339240817
+[2022-07-31 13:53:44,615]^;INFO^;94^;model_factory.py^;evaluate_regression_model()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Loss <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-31 13:53:44,615]^;INFO^;95^;model_factory.py^;evaluate_regression_model()^;Diff test train accuracy: [0.37910270625271536].
+[2022-07-31 13:53:44,615]^;INFO^;96^;model_factory.py^;evaluate_regression_model()^;Train root mean squared error: [35761.511970866406].
+[2022-07-31 13:53:44,615]^;INFO^;97^;model_factory.py^;evaluate_regression_model()^;Test root mean squared error: [78651.63190967917].
+[2022-07-31 13:53:44,615]^;INFO^;87^;model_trainer.py^;initiate_model_trainer()^;Best found model on both training and testing dataset.
+[2022-07-31 13:53:44,617]^;INFO^;95^;model_trainer.py^;initiate_model_trainer()^;Saving model at path: E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\model_trainer\2022-07-31-13-52-13\trained_model\model.pkl
+[2022-07-31 13:53:44,621]^;INFO^;109^;model_trainer.py^;initiate_model_trainer()^;Model Trainer Artifact: ModelTrainerArtifact(is_trained=True, message='Model Trained successfully', trained_model_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\model_trainer\\2022-07-31-13-52-13\\trained_model\\model.pkl', train_rmse=68627.87390018745, test_rmse=67304.47314152, train_accuracy=0.6481553634454353, test_accuracy=0.6524330608386422, model_accuracy=0.650287177366607)
+[2022-07-31 13:53:44,625]^;INFO^;115^;model_trainer.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model trainer log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-31 13:53:44,625]^;INFO^;195^;configuration.py^;get_model_evaluation_config()^;Model Evaluation Config: ModelEvaluationConfig(model_evaluation_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\model_evaluation\\model_evaluation.yaml', time_stamp='2022-07-31-13-52-13').
+[2022-07-31 13:53:44,625]^;INFO^;21^;model_evaluation.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model Evaluation log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-31 13:53:44,687]^;INFO^;103^;model_evaluation.py^;initiate_model_evaluation()^;Converting target column into numpy array.
+[2022-07-31 13:53:44,687]^;INFO^;106^;model_evaluation.py^;initiate_model_evaluation()^;Conversion completed target column into numpy array.
+[2022-07-31 13:53:44,687]^;INFO^;109^;model_evaluation.py^;initiate_model_evaluation()^;Dropping target column from the dataframe.
+[2022-07-31 13:53:44,689]^;INFO^;112^;model_evaluation.py^;initiate_model_evaluation()^;Dropping target column from the dataframe completed.
+[2022-07-31 13:53:44,692]^;INFO^;117^;model_evaluation.py^;initiate_model_evaluation()^;Not found any existing model. Hence accepting trained model
+[2022-07-31 13:53:44,693]^;INFO^;61^;model_evaluation.py^;update_evaluation_report()^;Previous eval result: {}
+[2022-07-31 13:53:44,693]^;INFO^;77^;model_evaluation.py^;update_evaluation_report()^;Updated eval result:{'best_model': {'model_path': 'E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\model_trainer\\2022-07-31-13-52-13\\trained_model\\model.pkl'}}
+[2022-07-31 13:53:44,695]^;INFO^;121^;model_evaluation.py^;initiate_model_evaluation()^;Model accepted. Model eval artifact ModelEvaluationArtifact(is_model_accepted=True, evaluated_model_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\model_trainer\\2022-07-31-13-52-13\\trained_model\\model.pkl') created
+[2022-07-31 13:53:44,695]^;INFO^;157^;model_evaluation.py^;__del__()^;====================Model Evaluation log completed.==================== 
+[2022-07-31 13:53:44,695]^;INFO^;208^;configuration.py^;get_model_pusher_config()^;Model pusher config ModelPusherConfig(export_dir_path='E:\\ineuronbasics\\Machine-Learning-Projects\\saved_models\\20220731135344')
+[2022-07-31 13:53:44,695]^;INFO^;15^;model_pusher.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model Pusher log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-31 13:53:44,695]^;INFO^;28^;model_pusher.py^;export_model()^;Exporting model file: [E:\ineuronbasics\Machine-Learning-Projects\saved_models\20220731135344\model.pkl]
+[2022-07-31 13:53:44,697]^;INFO^;34^;model_pusher.py^;export_model()^;Trained model: E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\model_trainer\2022-07-31-13-52-13\trained_model\model.pkl is copied in export dir:[E:\ineuronbasics\Machine-Learning-Projects\saved_models\20220731135344\model.pkl]
+[2022-07-31 13:53:44,697]^;INFO^;39^;model_pusher.py^;export_model()^;Model pusher artifact: [ModelPusherArtifact(is_model_pusher=True, export_model_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\saved_models\\20220731135344\\model.pkl')]
+[2022-07-31 13:53:44,697]^;INFO^;51^;model_pusher.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model Pusher log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-31 13:53:44,697]^;INFO^;150^;pipeline.py^;run_pipeline()^;Model pusher artifact: ModelPusherArtifact(is_model_pusher=True, export_model_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\saved_models\\20220731135344\\model.pkl')
+[2022-07-31 13:53:44,697]^;INFO^;153^;pipeline.py^;run_pipeline()^;Pipeline completed.
+[2022-07-31 13:53:44,697]^;INFO^;168^;pipeline.py^;run_pipeline()^;Pipeline experiment: Experiment(experiment_id='a0d49ac5-cbbd-4bf1-9c30-5153f8e0c05f', initialization_timestamp='2022-07-31-13-52-13', artifact_time_stamp='2022-07-31-13-52-13', running_status=False, start_time=datetime.datetime(2022, 7, 31, 13, 52, 13, 102918), stop_time=datetime.datetime(2022, 7, 31, 13, 53, 44, 697479), execution_time=datetime.timedelta(seconds=91, microseconds=594561), message='Pipeline has been completed.', experiment_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\experiment\\experiment.csv', accuracy=0.650287177366607, is_model_accepted=True)
+[2022-07-31 13:56:32,108]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:56:32] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-31 13:56:34,558]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:56:34] "GET /saved_models/saved_models/20220731135344 HTTP/1.1" 200 -
+[2022-07-31 13:58:23,593]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:58:23] "GET /artifact HTTP/1.1" 200 -
+[2022-07-31 13:58:30,816]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-31 13:58:30,818]^;INFO^;116^;pipeline.py^;run_pipeline()^;Pipeline starting.
+[2022-07-31 13:58:30,818]^;INFO^;132^;pipeline.py^;run_pipeline()^;Pipeline experiment: Experiment(experiment_id='6459a399-cef9-4aad-8780-bc878376f685', initialization_timestamp='2022-07-31-13-58-30', artifact_time_stamp='2022-07-31-13-58-30', running_status=True, start_time=datetime.datetime(2022, 7, 31, 13, 58, 30, 818020), stop_time=None, execution_time=None, message='Pipeline has been started.', experiment_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\experiment\\experiment.csv', accuracy=None, is_model_accepted=None)
+[2022-07-31 13:58:30,838]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 13:58:30] "GET /train HTTP/1.1" 200 -
+[2022-07-31 13:58:30,840]^;INFO^;67^;configuration.py^;get_data_ingestion_config()^;Data Ingestion Config :DataIngestionConfig(dataset_download_url='https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz', tgz_download_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-58-30\\tgz_data', raw_data_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-58-30\\raw_data', ingested_train_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-58-30\\ingested_data\\train', ingested_test_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-07-31-13-58-30\\ingested_data\\test')
+[2022-07-31 13:58:30,841]^;INFO^;18^;data_ingestion.py^;__init__()^;====================Data Ingestion Log Started.====================
+[2022-07-31 13:58:30,843]^;INFO^;40^;data_ingestion.py^;download_housing_data()^;downloading file from :[https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz] into :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-07-31-13-58-30\tgz_data\housing.tgz]
+[2022-07-31 13:58:31,267]^;INFO^;128^;data_ingestion.py^;__del__()^;====================Data Ingestion Log Completed.==================== 
+
+
+[2022-07-31 14:00:53,893]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 14:00:53] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-31 14:00:55,432]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 14:00:55] "GET /saved_models/saved_models/20220731135344 HTTP/1.1" 200 -
+[2022-07-31 14:00:58,418]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 14:00:58] "GET /predict HTTP/1.1" 200 -
+[2022-07-31 14:00:58,421]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 14:00:58] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-31 14:01:01,392]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 14:01:01] "GET /predict HTTP/1.1" 200 -
+[2022-07-31 14:04:36,998]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 14:04:36] "POST /predict HTTP/1.1" 200 -
+[2022-07-31 14:04:57,975]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 14:04:57] "GET / HTTP/1.1" 200 -
+[2022-07-31 14:05:13,622]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 14:05:13] "GET /predict HTTP/1.1" 200 -
+[2022-07-31 14:05:17,123]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 14:05:17] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-31 14:05:21,777]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-07-31 14:05:21,790]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [31/Jul/2022 14:05:21] "GET /train HTTP/1.1" 200 -
