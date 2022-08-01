@@ -1,0 +1,105 @@
+[2022-08-01 21:35:22,494]^;INFO^;224^;_internal.py^;_log()^; * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+[2022-08-01 21:35:57,026]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [01/Aug/2022 21:35:57] "GET / HTTP/1.1" 200 -
+[2022-08-01 21:35:59,119]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [01/Aug/2022 21:35:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2022-08-01 21:36:05,124]^;ERROR^;1456^;app.py^;log_exception()^;Exception on /view_experiment_hist [GET]
+Traceback (most recent call last):
+  File "E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py", line 205, in get_experiments_status
+    if os.path.exists(Pipeline.experiment_file_path):
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\genericpath.py", line 19, in exists
+    os.stat(path)
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 80, in view_experiment_history
+    experiment_df = Pipeline.get_experiments_status()
+  File "E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py", line 212, in get_experiments_status
+    raise HousingException(e, sys) from e
+housing.exception.HousingException: 
+        Error occured in script: 
+        [ E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py ] at 
+        try block line number: [205] and exception block line number: [212] 
+        error message: [stat: path should be string, bytes, os.PathLike or integer, not NoneType]
+        
+[2022-08-01 21:36:05,130]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [01/Aug/2022 21:36:05] "[35m[1mGET /view_experiment_hist HTTP/1.1[0m" 500 -
+[2022-08-01 21:36:11,713]^;ERROR^;1456^;app.py^;log_exception()^;Exception on /view_experiment_hist [GET]
+Traceback (most recent call last):
+  File "E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py", line 205, in get_experiments_status
+    if os.path.exists(Pipeline.experiment_file_path):
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\genericpath.py", line 19, in exists
+    os.stat(path)
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 80, in view_experiment_history
+    experiment_df = Pipeline.get_experiments_status()
+  File "E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py", line 212, in get_experiments_status
+    raise HousingException(e, sys) from e
+housing.exception.HousingException: 
+        Error occured in script: 
+        [ E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py ] at 
+        try block line number: [205] and exception block line number: [212] 
+        error message: [stat: path should be string, bytes, os.PathLike or integer, not NoneType]
+        
+[2022-08-01 21:36:11,714]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [01/Aug/2022 21:36:11] "[35m[1mGET /view_experiment_hist HTTP/1.1[0m" 500 -
+[2022-08-01 21:36:59,259]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [01/Aug/2022 21:36:59] "GET / HTTP/1.1" 200 -
+[2022-08-01 21:37:01,176]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [01/Aug/2022 21:37:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2022-08-01 21:37:02,403]^;ERROR^;1456^;app.py^;log_exception()^;Exception on /view_experiment_hist [GET]
+Traceback (most recent call last):
+  File "E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py", line 205, in get_experiments_status
+    if os.path.exists(Pipeline.experiment_file_path):
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\genericpath.py", line 19, in exists
+    os.stat(path)
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ineuronbasics\Machine-Learning-Projects\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 80, in view_experiment_history
+    experiment_df = Pipeline.get_experiments_status()
+  File "E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py", line 212, in get_experiments_status
+    raise HousingException(e, sys) from e
+housing.exception.HousingException: 
+        Error occured in script: 
+        [ E:\ineuronbasics\Machine-Learning-Projects\housing\pipeline\pipeline.py ] at 
+        try block line number: [205] and exception block line number: [212] 
+        error message: [stat: path should be string, bytes, os.PathLike or integer, not NoneType]
+        
+[2022-08-01 21:37:02,404]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [01/Aug/2022 21:37:02] "[35m[1mGET /view_experiment_hist HTTP/1.1[0m" 500 -
+[2022-08-01 21:37:34,968]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training Pipeline Config:TrainingPipelineConfig(artifact_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact')
+[2022-08-01 21:37:34,969]^;INFO^;116^;pipeline.py^;run_pipeline()^;Pipeline starting.
+[2022-08-01 21:37:34,969]^;INFO^;132^;pipeline.py^;run_pipeline()^;Pipeline experiment: Experiment(experiment_id='a56552d5-c73d-40c7-a0e8-f20ba64d23c3', initialization_timestamp='2022-08-01-21-37-34', artifact_time_stamp='2022-08-01-21-37-34', running_status=True, start_time=datetime.datetime(2022, 8, 1, 21, 37, 34, 969251), stop_time=None, execution_time=None, message='Pipeline has been started.', experiment_file_path='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\experiment\\experiment.csv', accuracy=None, is_model_accepted=None)
+[2022-08-01 21:37:35,041]^;INFO^;67^;configuration.py^;get_data_ingestion_config()^;Data Ingestion Config :DataIngestionConfig(dataset_download_url='https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz', tgz_download_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-08-01-21-37-34\\tgz_data', raw_data_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-08-01-21-37-34\\raw_data', ingested_train_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-08-01-21-37-34\\ingested_data\\train', ingested_test_dir='E:\\ineuronbasics\\Machine-Learning-Projects\\housing\\artifact\\data_ingestion\\2022-08-01-21-37-34\\ingested_data\\test')
+[2022-08-01 21:37:35,045]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [01/Aug/2022 21:37:35] "GET /train HTTP/1.1" 200 -
+[2022-08-01 21:37:35,045]^;INFO^;18^;data_ingestion.py^;__init__()^;====================Data Ingestion Log Started.====================
+[2022-08-01 21:37:35,046]^;INFO^;40^;data_ingestion.py^;download_housing_data()^;downloading file from :[https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz] into :[E:\ineuronbasics\Machine-Learning-Projects\housing\artifact\data_ingestion\2022-08-01-21-37-34\tgz_data\housing.tgz]
+[2022-08-01 21:37:35,546]^;INFO^;128^;data_ingestion.py^;__del__()^;====================Data Ingestion Log Completed.==================== 
+
+
